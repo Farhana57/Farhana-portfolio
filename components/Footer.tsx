@@ -1,0 +1,73 @@
+import React from 'react';
+import { Mail, Phone, MapPin } from 'lucide-react';
+
+export default function Footer() {
+  return (
+    <footer id="contact" className="bg-slate-900 border-t border-slate-800 text-slate-300 py-12 px-6 relative z-10">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 className="text-xl font-bold text-white mb-4">Farhana Khatun</h3>
+          <p className="text-sm text-slate-400 mb-4 leading-relaxed">
+            Exicutive Officer & Web Designer at UpToTechSyl. Building high-performance modern web applications and digital experiences.
+          </p>
+        </div>
+        <div>
+          <h4 className="text-lg font-semibold text-white mb-4">Contact Info</h4>
+          <p className="flex items-center gap-2 text-sm mb-2 text-slate-300">
+            <Mail size={16} className="text-purple-400 shrink-0" /> farhanakhatun22@gmail.com
+          </p>
+          <p className="flex items-center gap-2 text-sm mb-2 text-slate-300">
+            <Phone size={16} className="text-purple-400 shrink-0" /> 01759945057
+          </p>
+          <p className="flex items-center gap-2 text-sm text-slate-300">
+            <MapPin size={16} className="text-purple-400 shrink-0" /> Sylhet, Bangladesh
+          </p>
+        </div>
+        <div>
+          <h4 className="text-lg font-semibold text-white mb-4">Social Profiles</h4>
+          <div className="flex gap-4 items-center">
+            {/* WhatsApp */}
+            <a 
+              href="https://wa.me/8801759945057" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="p-2.5 bg-slate-800 rounded-full hover:bg-emerald-500 hover:text-slate-950 text-slate-300 transition-all"
+              title="WhatsApp"
+            >
+              <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+            </a>
+            {/* GitHub */}
+            <a 
+              href="https://github.com/Farhana57" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="p-2.5 bg-slate-800 rounded-full hover:bg-purple-500 hover:text-slate-950 text-slate-300 transition-all"
+              title="GitHub"
+            >
+              <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </a>
+            {/* LinkedIn */}
+            <a 
+              href="https://linkedin.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="p-2.5 bg-slate-800 rounded-full hover:bg-purple-500 hover:text-slate-950 text-slate-300 transition-all"
+              title="LinkedIn"
+            >
+              <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="mt-8 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
+        <p>© 2025 Farhana Khatun. Developed for UpToTechSyl. Powered by Next.js & Tailwind CSS.</p>
+      </div>
+    </footer>
+  );
+}
